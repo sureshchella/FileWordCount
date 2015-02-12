@@ -16,9 +16,8 @@ public class FileDownloadProcess {
 		String partialFileName = DESKPATH + "/XOANON_SURESH/";
 		String fileName = DESKPATH + "/XOANON_SURESH/DownloadedFile.txt";
 		System.out.println("Folder created in desktop successfully!");
-		System.out.println("Dowloaded file location is : " + fileName);
-		//URL link = new URL("http://www.gutenberg.org/cache/epub/2600/pg2600.txt");
-		URL link = new URL("http://wordpress.org/plugins/about/readme.txt");
+		System.out.println("Downloaded file location is : " + fileName);
+		URL link = new URL("http://www.gutenberg.org/cache/epub/2600/pg2600.txt");
 		InputStream in = new BufferedInputStream(link.openStream());
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		byte[] buf = new byte[2048];
